@@ -19,11 +19,11 @@ This command will create a Dockerfile and start an API pod in the Kubernetes clu
 
 ### Exercise 1
 
-Create an Python API that responds to /test_api(Flask recommended, but feel free with other Python modules).
+Create a Python API that responds to the path /test_api (Flask recommended, but feel free with other Python modules).
 
 This API must receive data as JSON with keys: url and status code. The output must be the result of an GET HTTP request to the provided url and check if the status code of the request is the same as provided in payload.
 
-To test it with Companies API, find the pod called "api" (you will find the pod IP) and then:
+To test it with Companies API, in Kubernetes cluster there is a pod called "api", find its IP. Then:
 
 `curl http://api_ip:5000/companies`
 
@@ -32,6 +32,8 @@ The output of Companies API is something like this:
 `[{"id": 1, "name": "Company One"}, {"id": 2, "name": "Company Two"}]`
 
 The status code of the request is 200
+
+**Obs: Your API will receive Companies API url and a status code and test it.**
 
 ### Exercise 2
 
