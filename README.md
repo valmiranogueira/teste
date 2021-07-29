@@ -13,7 +13,7 @@
 
 `cd api && sh run_api.sh`
 
-This command will create a Dockerfile and start an API pod in the Kubernetes cluster, under current namespace.
+This command will create a Dockerfile and start Companies API pod in the Kubernetes cluster, under current namespace.
 
 **It's required that the cluster works with Docker local images**
 
@@ -45,4 +45,4 @@ Create a pod that will run image created in exercise 2.
 
 ### Exercise 4
 
-Test the API running on pod created in exercise 3. This test must be performed 
+Test the API running on pod created in exercise 3.
