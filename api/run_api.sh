@@ -4,3 +4,4 @@ kubectl delete pod api || true
 kubectl delete service api || true
 docker build -t api .
 kubectl create -f api.yaml
+kubectl create -f nodeport.yaml
